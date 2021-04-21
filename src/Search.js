@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
 import ReactLoading from "react-loading";
+import FormattedDate from "./FormattedDate";
 
 export default function Search(props) {
   const [weather, setWeather] = useState({ ready: false });
@@ -10,7 +11,7 @@ export default function Search(props) {
       ready: true,
       city: response.data.name,
       description: response.data.weather[0].description,
-      date: "Wednesday 8:42 AM",
+      date: new Date(response.data.dt * 1000),
       temp: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -37,7 +38,9 @@ export default function Search(props) {
           </div>
           <div className="city">{weather.city}</div>
           <div className="information">
-            <div className="time">{weather.date}</div>
+            <div className="time">
+              <FormattedDate date={weather.date} />
+            </div>
             <div className="description">{weather.description}</div>
             <ul>
               <li className="humidity">Humidity: {weather.humidity}%</li>
