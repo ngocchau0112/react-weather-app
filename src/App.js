@@ -10,7 +10,7 @@ function App() {
       <div
         className="w-50 bg-image"
         style={{
-          backgroundImage: `url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/573/original/Night-900px.png?1618973433")`,
+          backgroundImage: `url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/577/original/Night-950px.png?1618979002")`,
         }}
       >
         <Search />
