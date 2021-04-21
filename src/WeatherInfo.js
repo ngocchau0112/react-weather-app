@@ -15,10 +15,12 @@ export default function WeatherInfo(props) {
           <FormattedDate date={props.data.date} />
         </div>
         <div className="description">{props.data.description}</div>
-        <ul>
-          <li className="humidity">Humidity: {props.data.humidity}%</li>
-          <li className="wind">Wind: {props.data.wind}km/h</li>
-        </ul>
+        <div className="extras">
+          <ul>
+            <li className="humidity">Humidity: {props.data.humidity}%</li>
+            <li className="wind">Wind: {props.data.wind}km/h</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

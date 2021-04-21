@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import ReactLoading from "react-loading";
-
+import Forecast from "./Forecast";
 import WeatherInfo from "./WeatherInfo";
 
 export default function Search(props) {
@@ -10,6 +10,7 @@ export default function Search(props) {
   function getWeather(response) {
     setWeather({
       ready: true,
+      coord: response.data.coord,
       city: response.data.name,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
@@ -51,6 +52,7 @@ export default function Search(props) {
           <input type="submit" class="btn btn-light mb-2" value="Search" />
         </form>
         <WeatherInfo data={weather} />
+        <Forecast coord={weather.coord} />
       </div>
     );
   } else {

@@ -2,7 +2,6 @@ import "./App.css";
 import "./bootstrap/dist/css/bootstrap.css";
 import Search from "./Search";
 import Footer from "./Footer";
-import Forecast from "./Forecast";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
         }}
       >
         <Search defaultCity="ho chi minh" />
-        <Forecast />
+
         <Footer />
       </div>
     </div>

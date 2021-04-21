@@ -94,3 +94,16 @@ li {
   color: white;
   text-decoration: none;
 }
+
+.day,
+.temp-types {
+  font-size: 13px;
+}
+
+.extras {
+  margin-top: -20px;
+}
+
+.forecast {
+  padding: 8px;
+}
