@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container {
   color: white;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-image {
+  border-radius: 40px;
+}
+.search-form {
+  padding-top: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.show-weather {
+  padding-top: 50%;
+}
+
+.main-temp {
+  margin-top: -30px;
+  font-size: 80px;
+  font-family: "Wallpoet", cursive;
+}
+
+.smaller {
+  font-size: 30px;
+}
+
+.city {
+  margin-top: -20px;
+  margin-bottom: 3px;
+  font-size: 40px;
+  font-family: "Audiowide", cursive;
+}
+
+.information {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 15px;
+  font-weight: 200;
+  margin-left: 250px;
+}
+
+.footer {
+  font-size: 11px;
+  font-family: "Roboto Mono", monospace;
+  padding: 15px;
+}
+
+.weather-icon {
+  margin: 10px;
+}
+
+.temp-types {
+  margin-top: -10px;
+}
+
+.min-temp {
+  opacity: 50%;
 }
