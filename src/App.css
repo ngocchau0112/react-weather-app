@@ -20,8 +20,11 @@
   font-family: "Wallpoet", cursive;
 }
 
-.smaller {
+.smaller-temp {
   font-size: 30px;
+  color: #85999e;
+  position: relative;
+  margin-right: -50px;
 }
 
 .city {
@@ -81,4 +84,13 @@ li {
 
 .description {
   text-transform: capitalize;
+}
+
+.tempConvert {
+  color: #85999e;
+}
+
+.tempConvert:hover {
+  color: white;
+  text-decoration: none;
 }
