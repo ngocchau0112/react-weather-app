@@ -44,12 +44,12 @@ export default function Search(props) {
           onSubmit={handleSubmit}
         >
           <input
-            class="form-control col-6"
+            className="form-control col-6"
             type="search"
             placeholder="Enter a Location"
             onChange={handleCityChange}
           />
-          <input type="submit" class="btn btn-light mb-2" value="Search" />
+          <input type="submit" className="btn btn-light mb-2" value="Search" />
         </form>
         <WeatherInfo data={weather} />
         <Forecast coord={weather.coord} />
@@ -58,8 +58,8 @@ export default function Search(props) {
   } else {
     search();
     return (
-      <div class="loading">
-        <div class="d-flex justify-content-center">
+      <div className="loading">
+        <div className="d-flex justify-content-center">
           <ReactLoading
             type="spinningBubbles"
             color="#0F506E"
