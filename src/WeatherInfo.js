@@ -5,7 +5,7 @@ import FormattedDate from "./FormattedDate";
 export default function WeatherInfo(props) {
   return (
     <div className="show-weather text-center">
-      <WeatherIcon icon="CLEAR_DAY" size="130" />
+      <WeatherIcon code={props.data.icon} size="130" />
       <div className="main-temp">
         {props.data.temp}°C <span className="smaller">| °F</span>
       </div>
