@@ -14,7 +14,7 @@ function App() {
           backgroundImage: `url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/577/original/Night-950px.png?1618979002")`,
         }}
       >
-        <Search />
+        <Search defaultCity="Tokyo" />
         <Forecast />
         <Footer />
       </div>
